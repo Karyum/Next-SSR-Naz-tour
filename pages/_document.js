@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
+          <title>Nazareth tour</title>
           {this.props.styleTags}
         </Head>
         <body>

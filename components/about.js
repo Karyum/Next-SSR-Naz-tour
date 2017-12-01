@@ -12,14 +12,14 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 2rem;
+  color: #609a84;
+  font-size: 3rem;
   font-weight: 400;
   margin: 0rem;
-  color: #666;
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
   margin: 0erm;

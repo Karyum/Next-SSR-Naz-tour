@@ -20,8 +20,9 @@ const NameWrapper = styled.div`
 `;
 
 const Name = styled.span`
-  font-size: 2.25rem;
-  color: #404040;
+  font-weight: bold;
+  color: #609a84;
+  font-size: 2.5rem;
 `;
 
 const A = styled.a`
@@ -45,7 +46,7 @@ class NavBar extends Component {
     super();
 
     this.state = {
-      a1: '#282828',
+      a1: '#609a84',
       a2: '#666',
       a3: '#666'
     };
@@ -56,15 +57,15 @@ class NavBar extends Component {
   }
 
   handleAbout() {
-    this.setState({ a1: '#282828', a2: '#666', a3: '#666' });
+    this.setState({ a1: '#609a84', a2: '#666', a3: '#666' });
   }
 
   handleContact() {
-    this.setState({ a3: '#282828', a1: '#666', a2: '#666' });
+    this.setState({ a3: '#609a84', a1: '#666', a2: '#666' });
   }
 
   handleTour() {
-    this.setState({ a2: '#282828', a3: '#666', a1: '#666' });
+    this.setState({ a2: '#609a84', a3: '#666', a1: '#666' });
   }
 
   render() {
