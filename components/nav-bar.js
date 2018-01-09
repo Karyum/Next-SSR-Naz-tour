@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: fixed;
@@ -14,7 +14,7 @@ const NavWrapper = styled.div`
 const NameWrapper = styled.div`
   width: 100%;
   display: flex;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   margin-left: 2%;
 `;
@@ -28,7 +28,7 @@ const Name = styled.span`
 const A = styled.a`
   margin-left: 2rem;
   margin-right: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   transition: color 0.15s ease-in;
   color: #666;
@@ -46,9 +46,9 @@ class NavBar extends Component {
     super();
 
     this.state = {
-      a1: '#609a84',
-      a2: '#666',
-      a3: '#666'
+      a1: "#609a84",
+      a2: "#666",
+      a3: "#666"
     };
 
     this.handleAbout = this.handleAbout.bind(this);
@@ -57,15 +57,15 @@ class NavBar extends Component {
   }
 
   handleAbout() {
-    this.setState({ a1: '#609a84', a2: '#666', a3: '#666' });
+    this.setState({ a1: "#609a84", a2: "#666", a3: "#666" });
   }
 
   handleContact() {
-    this.setState({ a3: '#609a84', a1: '#666', a2: '#666' });
+    this.setState({ a3: "#609a84", a1: "#666", a2: "#666" });
   }
 
   handleTour() {
-    this.setState({ a2: '#609a84', a3: '#666', a1: '#666' });
+    this.setState({ a2: "#609a84", a3: "#666", a1: "#666" });
   }
 
   render() {

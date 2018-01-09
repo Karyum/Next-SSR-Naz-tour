@@ -1,13 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   padding-top: 8rem;
-  padding-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   @media (min-width: 60em) {
-    width: 50%;
+    width: 65%;
   }
 `;
 
@@ -21,23 +20,53 @@ const Title = styled.h1`
 const Paragraph = styled.p`
   font-size: 2rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   margin: 0erm;
   color: #666;
+`;
+
+const Image = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  @media (max-width: 60em) {
+    height: 50%;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5rem;
 `;
 
 const Tour = () => (
   <Wrapper id="Tour">
     <Title>Tour</Title>
-    <Paragraph>
-      Wow this tour is about some stuff which i don't know what the hell am i
-      even doing im just trying to fill this paragraph with some text just to
-      try it.Wow this tour is about some stuff which i don't know what the hell
-      am i even doing im just trying to fill this paragraph with some text just
-      to try itWow this tour is about some stuff which i don't know what the
-      hell am i even doing im just trying to fill this paragraph with some text
-      just to try it
-    </Paragraph>
+    <Paragraph>Dome of the Rock</Paragraph>
+    <ImageWrapper>
+      <Image src="../static/dome-of-the-rock.jpg" />
+    </ImageWrapper>
+    <Paragraph>Church of the Holy Sepulchre</Paragraph>
+    <ImageWrapper>
+      <Image src="../static/church-of-the-holy-sepulchre.jpg" />
+    </ImageWrapper>
+    <Paragraph>Dead Sea</Paragraph>
+    <ImageWrapper>
+      <Image src="../static/dead-sea.jpg" />
+    </ImageWrapper>
+    <Paragraph>Tel Aviv</Paragraph>
+    <ImageWrapper>
+      <Image src="../static/tel-aviv.jpg" />
+    </ImageWrapper>
+    <Paragraph>Hermon Mountain</Paragraph>
+    <ImageWrapper>
+      <Image src="../static/hermon-mountain.jpg" />
+    </ImageWrapper>
+    <Paragraph>Nazareth</Paragraph>
+    <ImageWrapper>
+      <Image src="../static/naz.png" />
+    </ImageWrapper>
   </Wrapper>
 );
 
