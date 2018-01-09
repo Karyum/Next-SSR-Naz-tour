@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   padding-top: 8rem;
@@ -21,7 +21,7 @@ const Title = styled.h1`
 const Paragraph = styled.p`
   font-size: 2rem;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   margin: 0erm;
   color: #666;
 `;
@@ -29,15 +29,8 @@ const Paragraph = styled.p`
 const Contact = () => (
   <Wrapper id="Contact">
     <Title>Contact</Title>
-    <Paragraph>
-      Wow this tour is about some stuff which i don't know what the hell am i
-      even doing im just trying to fill this paragraph with some text just to
-      try it.Wow this tour is about some stuff which i don't know what the hell
-      am i even doing im just trying to fill this paragraph with some text just
-      to try itWow this tour is about some stuff which i don't know what the
-      hell am i even doing im just trying to fill this paragraph with some text
-      just to try it
-    </Paragraph>
+    <Paragraph>Call: +972 (0) 526560670</Paragraph>
+    <Paragraph>Email: osama.saleh236@gmail.com</Paragraph>
   </Wrapper>
 );
 
