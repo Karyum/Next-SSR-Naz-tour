@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   margin-right: auto;
   width: 80%;
   @media (min-width: 60em) {
-    width: 50%;
+    width: 65%;
   }
 `;
 
