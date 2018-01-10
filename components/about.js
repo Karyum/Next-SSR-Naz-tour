@@ -13,13 +13,19 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   color: #609a84;
-  font-size: 3rem;
+  font-size: 2rem;
+  @media (min-width: 60em) {
+    font-size: 3rem;
+  }
   font-weight: 400;
   margin: 0rem;
 `;
 
 const Paragraph = styled.p`
-  font-size: 2rem;
+  font-size: 1.6rem;
+  @media (min-width: 60em) {
+    font-size: 2rem;
+  }
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin: 0erm;

@@ -22,13 +22,19 @@ const NameWrapper = styled.div`
 const Name = styled.span`
   font-weight: bold;
   color: #609a84;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
+  @media (min-width: 60em) {
+    font-size: 2.5rem;
+  }
 `;
 
 const A = styled.a`
   margin-left: 2rem;
   margin-right: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @media (min-width: 60em) {
+    font-size: 2rem;
+  }
   text-decoration: none;
   transition: color 0.15s ease-in;
   color: #666;

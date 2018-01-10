@@ -4,6 +4,9 @@ const Wrapper = styled.div`
   padding-top: 8rem;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   width: 80%;
   @media (min-width: 60em) {
     width: 65%;
@@ -12,13 +15,19 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   color: #609a84;
-  font-size: 3rem;
+  font-size: 2rem;
+  @media (min-width: 60em) {
+    font-size: 3rem;
+  }
   font-weight: 400;
   margin: 0rem;
 `;
 
 const Paragraph = styled.p`
-  font-size: 2rem;
+  font-size: 1.6rem;
+  @media (min-width: 60em) {
+    font-size: 2rem;
+  }
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin: 0erm;
@@ -26,47 +35,25 @@ const Paragraph = styled.p`
 `;
 
 const Image = styled.img`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  @media (max-width: 60em) {
-    height: 50%;
-  }
-`;
-
-const ImageWrapper = styled.div`
-  justify-content: center;
-  display: flex;
-  margin-bottom: 5rem;
+  width: 100%;
+  height: 60vh;
 `;
 
 const Tour = () => (
   <Wrapper id="Tour">
     <Title>Tour</Title>
     <Paragraph>Dome of the Rock</Paragraph>
-    <ImageWrapper>
-      <Image src="../static/dome-of-the-rock.jpg" />
-    </ImageWrapper>
+    <Image src="../static/dome-of-the-rock.jpg" />
     <Paragraph>Church of the Holy Sepulchre</Paragraph>
-    <ImageWrapper>
-      <Image src="../static/church-of-the-holy-sepulchre.jpg" />
-    </ImageWrapper>
+    <Image src="../static/church-of-the-holy-sepulchre.jpg" />
     <Paragraph>Dead Sea</Paragraph>
-    <ImageWrapper>
-      <Image src="../static/dead-sea.jpg" />
-    </ImageWrapper>
+    <Image src="../static/dead-sea.jpg" />
     <Paragraph>Tel Aviv</Paragraph>
-    <ImageWrapper>
-      <Image src="../static/tel-aviv.jpg" />
-    </ImageWrapper>
+    <Image src="../static/tel-aviv.jpg" />
     <Paragraph>Hermon Mountain</Paragraph>
-    <ImageWrapper>
-      <Image src="../static/hermon-mountain.jpg" />
-    </ImageWrapper>
+    <Image src="../static/hermon-mountain.jpg" />
     <Paragraph>Nazareth</Paragraph>
-    <ImageWrapper>
-      <Image src="../static/naz.png" />
-    </ImageWrapper>
+    <Image src="../static/naz.png" />
   </Wrapper>
 );
 
